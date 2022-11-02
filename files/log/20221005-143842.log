@@ -1,0 +1,4 @@
+2022-10-05 14:38:43,836 - tOITe-Log - DEBUG - tutorial
+2022-10-05 14:38:44,362 - tOITe-Log - DEBUG - Save Data:{'tutorial': 'T', 'speech': '0', 'pose': '0', 'select': '0', 'complete': '0'}
+2022-10-05 14:38:44,375 - tOITe-Log - DEBUG - State Change: SELECT_GAME
+2022-10-05 14:38:45,959 - tOITe-Log - DEBUG - Event : ‘½Šò‘I‘ð

@@ -1,0 +1,76 @@
+2022-09-29 15:12:11,302 - tOITe-Log - DEBUG - tutorial
+2022-09-29 15:12:11,905 - tOITe-Log - DEBUG - Save Data:{'tutorial': 'T', 'speech': '0', 'pose': '0', 'select': '0', 'complete': '0'}
+2022-09-29 15:12:11,944 - tOITe-Log - DEBUG - State Change: SELECT_GAME
+2022-09-29 15:12:18,144 - tOITe-Log - DEBUG - Event : 姿勢推定
+2022-09-29 15:12:18,284 - tOITe-Log - DEBUG - State Change: POSE_Q
+2022-09-29 15:12:20,342 - tOITe-Log - DEBUG - Event : POSE_Q
+2022-09-29 15:12:20,419 - tOITe-Log - DEBUG - State Change: POSE_IMGPROC
+2022-09-29 15:12:20,877 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:21,177 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:21,436 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:21,693 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:21,955 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:22,213 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:22,477 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:22,733 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:22,992 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:23,251 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:23,511 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:23,966 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:24,222 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:24,476 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:24,733 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:24,987 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:25,240 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:25,492 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:25,745 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:25,999 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:26,250 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:26,496 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:26,750 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:27,003 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:27,259 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:27,509 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:27,762 - tOITe-Log - DEBUG - isFound : 0
+2022-09-29 15:12:28,013 - tOITe-Log - DEBUG - isFound : True
+2022-09-29 15:12:28,098 - tOITe-Log - DEBUG - State Change: POSE_CORRECT
+2022-09-29 15:12:30,315 - tOITe-Log - DEBUG - Event : POSE_CORRECT
+2022-09-29 15:12:30,430 - tOITe-Log - DEBUG - State Change: SELECT_GAME
+2022-09-29 15:12:33,442 - tOITe-Log - DEBUG - Event : 音声認識
+2022-09-29 15:12:33,556 - tOITe-Log - DEBUG - State Change: SPEECH_Q1
+2022-09-29 15:12:38,217 - tOITe-Log - DEBUG - State Change: SPEECH_Q2
+2022-09-29 15:12:41,656 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:43,235 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:46,470 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:47,425 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:48,389 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:49,078 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:49,376 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:49,620 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:49,853 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:50,076 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:50,152 - tOITe-Log - DEBUG - start recording
+2022-09-29 15:12:50,186 - tOITe-Log - DEBUG - Audio record thread was started
+2022-09-29 15:12:54,499 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:55,601 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:56,256 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:56,913 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:57,235 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:57,479 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:57,722 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:57,977 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:58,231 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:58,613 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:58,878 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:59,101 - tOITe-Log - DEBUG - Event : SPEECH_Q2
+2022-09-29 15:12:59,176 - tOITe-Log - DEBUG - stop recording
+2022-09-29 15:13:00,599 - tOITe-Log - DEBUG - 大正 昭和 平成
+2022-09-29 15:13:00,660 - tOITe-Log - DEBUG - State Change: SPEECH_CORRECT
+2022-09-29 15:13:07,281 - tOITe-Log - DEBUG - Event : SPEECH_CORRECT
+2022-09-29 15:13:07,409 - tOITe-Log - DEBUG - State Change: SELECT_GAME
+2022-09-29 15:16:20,882 - tOITe-Log - DEBUG - State Change: CARD_ERROR
+2022-09-29 15:16:24,424 - tOITe-Log - DEBUG - State Change: STANDBY
+2022-09-29 15:16:25,019 - tOITe-Log - DEBUG - Save Data:{'tutorial': 'T', 'speech': '0', 'pose': '0', 'select': '0', 'complete': '0'}
+2022-09-29 15:16:25,055 - tOITe-Log - DEBUG - State Change: SELECT_GAME
+2022-09-29 15:16:25,633 - tOITe-Log - DEBUG - Admin card was placed
+2022-09-29 15:16:25,942 - tOITe-Log - DEBUG - Finished finalize procedures

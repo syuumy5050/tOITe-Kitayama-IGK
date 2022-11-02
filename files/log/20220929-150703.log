@@ -1,0 +1,5 @@
+2022-09-29 15:07:07,214 - tOITe-Log - DEBUG - tutorial
+2022-09-29 15:07:08,986 - tOITe-Log - DEBUG - Save Data:{'tutorial': 'T', 'speech': '0', 'pose': '0', 'select': '0', 'complete': '0'}
+2022-09-29 15:07:09,024 - tOITe-Log - DEBUG - State Change: SELECT_GAME
+2022-09-29 15:07:09,604 - tOITe-Log - DEBUG - Admin card was placed
+2022-09-29 15:07:09,941 - tOITe-Log - DEBUG - Finished finalize procedures
