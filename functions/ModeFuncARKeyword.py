@@ -57,37 +57,46 @@ def AREntry_ModeProc(dictArgument):
 def ARWord1_ModeProc(dictArgument):
 	event = dictArgument["Event"]
 	cState = dictArgument["State"]
+	cAudioOut = dictArgument["AudioOut"]
 
 	if event == "メ":
 		dictArgument["Start time"] = cState.updateState("ARWORD2")
 	elif event == "ロ" or event == "カ" or event == "ラ":
+		cAudioOut.playSoundAsync("sound/wrong_24.wav")
 		dictArgument["Start time"] = cState.updateState("ARWRONG")
 
 def ARWord2_ModeProc(dictArgument):
 	event = dictArgument["Event"]
 	cState = dictArgument["State"]
+	cAudioOut = dictArgument["AudioOut"]
 
 	if event == "イ":
 		dictArgument["Start time"] = cState.updateState("ARWORD3")
 	elif event == "リ" or event == "ス" or event == "ク":
+		cAudioOut.playSoundAsync("sound/wrong_24.wav")
 		dictArgument["Start time"] = cState.updateState("ARWRONG")
 
 def ARWord3_ModeProc(dictArgument):
 	event = dictArgument["Event"]
 	cState = dictArgument["State"]
+	cAudioOut = dictArgument["AudioOut"]
 
 	if event == "キュ":
 		dictArgument["Start time"] = cState.updateState("ARWORD4")
 	elif event == "キョ" or event == "キャ" or event == "キッ":
+		cAudioOut.playSoundAsync("sound/wrong_24.wav")
 		dictArgument["Start time"] = cState.updateState("ARWRONG")
 
 def ARWord4_ModeProc(dictArgument):
 	event = dictArgument["Event"]
 	cState = dictArgument["State"]
+	cAudioOut = dictArgument["AudioOut"]
 
 	if event == "ウ":
+		cAudioOut.playSoundAsync("sound/correct_24.wav")
 		dictArgument["Start time"] = cState.updateState("ARCORRECT")
 	elif event == "ーん" or event == "アップ" or event == "ル":
+		cAudioOut.playSoundAsync("sound/wrong_24.wav")
 		dictArgument["Start time"] = cState.updateState("ARWRONG")
 
 def ARWrong_ModeProc(dictArgument):
