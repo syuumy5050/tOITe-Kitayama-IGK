@@ -24,7 +24,7 @@ def createDictWindow():
 	layoutBackGround = [[sg.Text()]]
 	layoutStandby = make_fullimage_layout("images/standby.png", "STANDBY")
 	layoutTitle = make_fullimage_layout("images/title.png", "TITLE")
-	layoutSelect_Game = make_4choice_layout("images/select.png", ["音声認識", "姿勢推定", "多岐選択", ""])
+	layoutSelect_Game = make_4choice_layout("images/select.png", ["", "AR\nラビリンス", "", ""])
 	layoutEnding = make_fullimage_layout("images/ending.png", "ENDING")
 	layoutCard_Error = make_fullimage_layout("images/card_alert.png", "CARD_ERROR")
 
@@ -51,17 +51,15 @@ def standbyModeProc(dictArgument):
 	cCtrlCard.initID()
 	setFlag = cCtrlCard.setCard()
 
+	cState.dictWindow["SELECT_GAME"]["AR\nラビリンス"].update(disabled=False)
+
 	if setFlag:
 		dictSaveData = cCtrlCard.read_result()
 		cLogger.logDebug("Save Data:", dictSaveData)
 
 		if dictSaveData["tutorial"] == "T":
-			if dictSaveData["speech"] == "T":
-				cState.dictWindow["SELECT_GAME"]["音声認識"].update(disabled=True)
-			if dictSaveData["pose"] == "T":
-				cState.dictWindow["SELECT_GAME"]["姿勢推定"].update(disabled=True)
-			if dictSaveData["select"] == "T":
-				cState.dictWindow["SELECT_GAME"]["多岐選択"].update(disabled=True)
+			if dictSaveData["ar_labyrinth"] == "T":
+				cState.dictWindow["SELECT_GAME"]["AR\nラビリンス"].update(disabled=True)
 			
 			cAudioOut.playSoundAsync("sound/card_set_24.wav")
 			dictArgument["Start time"] = cState.updateState("SELECT_GAME")
@@ -92,28 +90,18 @@ def select_game_ModeProc(dictArgument):
 	cCtrlCard = dictArgument["CtrlCard"]
 	cAudioOut = dictArgument["AudioOut"]
 
-	if event == "音声認識":
-		cAudioOut.enableStateChange("SPEECH_Q2")
-		cAudioOut.playSoundAsync("sound/speech_24.wav")
-		dictArgument["Start time"] = cState.updateState("SPEECH_Q1")
-	elif event == "姿勢推定":
-		dictArgument["Start time"] = cState.updateState("POSE_Q")
-	elif event == "多岐選択":
-		sStartTime = cState.updateState("SELECT_Q1")
-		cAudioOut.playSoundAsync("sound/oit_24.wav")
-		dictArgument["Start time"] = sStartTime
-#	elif event == "画像":
-#		sStartTime = cState.updateState("QR_Q")
-#		proc.createWindows()
-#		dictArgument["Start time"] = sStartTime
+	if event == "AR\nラビリンス":
+		# cAudioOut.enableStateChange("SPEECH_Q2")
+		# cAudioOut.playSoundAsync("sound/speech_24.wav")
+		dictArgument["Start time"] = cState.updateState("ARENTRY")
 
 
 # ENDINGモード処理 =========================================================
 def endingModeProc(dictArgument):
 	event = dictArgument["Event"]
 	
-	if event == "ENDING":
-		dictArgument["Complete"] = 1
+	# if event == "ENDING":
+	# 	dictArgument["Complete"] = 1
 
 
 # card_errorモード処理 ======================================================

@@ -1,0 +1,24 @@
+2022-11-02 12:57:38,017 - tOITe-Log - DEBUG - tutorial
+2022-11-02 12:57:38,527 - tOITe-Log - DEBUG - Save Data:{'tutorial': 'T', 'true_false': '0', 'pose': '0', 'hand': '0', 'ar_labyrinth': '0'}
+2022-11-02 12:57:38,531 - tOITe-Log - DEBUG - State Change: SELECT_GAME
+2022-11-02 12:57:51,385 - tOITe-Log - DEBUG - Event : AR
+ラビリンス
+2022-11-02 12:57:51,402 - tOITe-Log - DEBUG - State Change: ARENTRY
+2022-11-02 12:58:02,605 - tOITe-Log - DEBUG - Event : ARENTRY
+2022-11-02 12:58:02,626 - tOITe-Log - DEBUG - State Change: ARWORD1
+2022-11-02 12:58:06,497 - tOITe-Log - DEBUG - Event : メ
+2022-11-02 12:58:06,525 - tOITe-Log - DEBUG - State Change: ARWORD2
+2022-11-02 12:58:08,645 - tOITe-Log - DEBUG - Event : ス
+2022-11-02 12:58:08,659 - tOITe-Log - DEBUG - State Change: ARWRONG
+2022-11-02 12:58:10,695 - tOITe-Log - DEBUG - State Change: ARWORD1
+2022-11-02 12:58:11,897 - tOITe-Log - DEBUG - Event : メ
+2022-11-02 12:58:11,918 - tOITe-Log - DEBUG - State Change: ARWORD2
+2022-11-02 12:58:13,143 - tOITe-Log - DEBUG - Event : イ
+2022-11-02 12:58:13,161 - tOITe-Log - DEBUG - State Change: ARWORD3
+2022-11-02 12:58:15,023 - tOITe-Log - DEBUG - Event : キュ
+2022-11-02 12:58:15,046 - tOITe-Log - DEBUG - State Change: ARWORD4
+2022-11-02 12:58:16,026 - tOITe-Log - DEBUG - Event : ウ
+2022-11-02 12:58:16,034 - tOITe-Log - DEBUG - State Change: ARCORRECT
+2022-11-02 12:58:18,073 - tOITe-Log - DEBUG - State Change: AREND
+2022-11-02 12:58:22,928 - tOITe-Log - DEBUG - Event : AREND
+2022-11-02 12:58:22,942 - tOITe-Log - DEBUG - State Change: SELECT_GAME

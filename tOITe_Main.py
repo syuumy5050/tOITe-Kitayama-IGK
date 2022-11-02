@@ -5,9 +5,10 @@ import os
 
 from functions.ModeFuncBase import *
 from functions.ModeFuncTutorial import *
-from functions.ModeFuncSpeech import *
-from functions.ModeFuncPose import *
-from functions.ModeFuncSelect import *
+# from functions.ModeFuncSpeech import *
+# from functions.ModeFuncPose import *
+# from functions.ModeFuncSelect import *
+from functions.ModeFuncARKeyword import *
 from functions.CardFunc import *
 from functions.common import getDictFlag
 from Classes.ClsCtrlStateAndWindow import ClsCtrlStateAndWindow
@@ -21,7 +22,7 @@ else:
 
 import sys
 sys.path.append("./Classes")
-from ClsImageProcessPose import ClsImageProcessPose
+# from ClsImageProcessPose import ClsImageProcessPose
 from ClsAudioIn import ClsAudioIn
 from ClsAudioOut import ClsAudioOut
 
@@ -41,16 +42,17 @@ def setEnvironment():
 	tplWindowName = ("full",)
 	sFlipMode = 2
 
-	cImageProc = ClsImageProcessPose(
-		strPlatform,
-		sCameraNumber,
-		sSensorWidth,
-		sSensorHeight,
-		sMonitorWidth,
-		sMonitorHeight,
-		tplWindowName,
-		sFlipMode,
-	)
+	# cImageProc = ClsImageProcessPose(
+	# 	strPlatform,
+	# 	sCameraNumber,
+	# 	sSensorWidth,
+	# 	sSensorHeight,
+	# 	sMonitorWidth,
+	# 	sMonitorHeight,
+	# 	tplWindowName,
+	# 	sFlipMode,
+	# )
+	cImageProc = None
 
 	cLogger = ClsLogger()
 
@@ -67,9 +69,7 @@ def setEnvironment():
 def setModeFuncsAndLayouts(blDebug):
 	dictWindow = createDictWindow()
 	dictWindow = updateDictWindow_Tutorial(dictWindow)
-	dictWindow = updateDictWindow_Speech(dictWindow)
-	dictWindow = updateDictWindow_Pose(dictWindow)
-	dictWindow = updateDictWindow_Select(dictWindow)
+	dictWindow = updateDictWindow_ARKeyword(dictWindow)
 
 	if blDebug == False:
 		for sKey in dictWindow:
@@ -81,9 +81,7 @@ def setModeFuncsAndLayouts(blDebug):
 
 	dictProc = createDictProc()
 	dictProc = updateDictProc_Tutorial(dictProc)
-	dictProc = updateDictProc_Speech(dictProc)
-	dictProc = updateDictProc_Pose(dictProc)
-	dictProc = updateDictProc_Select(dictProc)
+	dictProc = updateDictProc_ARKeyword(dictProc)
 
 	dictFlag = getDictFlag()
 

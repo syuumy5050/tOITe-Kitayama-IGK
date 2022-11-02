@@ -9,6 +9,7 @@ numpy = "*"
 pyyaml = "*"
 pysimplegui = "*"
 pyautogui = "*"
+pyaudio = "*"
 
 [dev-packages]
 
@@ -16,4 +17,4 @@ pyautogui = "*"
 python_version = "3.9"
 
 [scripts]
-main = "py Magiot_Main.py"
+main = "py tOITe_Main.py"
