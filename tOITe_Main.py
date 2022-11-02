@@ -22,7 +22,7 @@ else:
 
 import sys
 sys.path.append("./Classes")
-# from ClsImageProcessPose import ClsImageProcessPose
+from ClsImageProcessPose import ClsImageProcessPose
 from ClsAudioIn import ClsAudioIn
 from ClsAudioOut import ClsAudioOut
 
@@ -42,17 +42,16 @@ def setEnvironment():
 	tplWindowName = ("full",)
 	sFlipMode = 2
 
-	# cImageProc = ClsImageProcessPose(
-	# 	strPlatform,
-	# 	sCameraNumber,
-	# 	sSensorWidth,
-	# 	sSensorHeight,
-	# 	sMonitorWidth,
-	# 	sMonitorHeight,
-	# 	tplWindowName,
-	# 	sFlipMode,
-	# )
-	cImageProc = None
+	cImageProc = ClsImageProcessPose(
+		strPlatform,
+		sCameraNumber,
+		sSensorWidth,
+		sSensorHeight,
+		sMonitorWidth,
+		sMonitorHeight,
+		tplWindowName,
+		sFlipMode,
+	)
 
 	cLogger = ClsLogger()
 
@@ -158,7 +157,7 @@ def mainThread():
 		dictProc[currentState](dictArgument)
 
 	cAudioIn.finalize()
-	#cAudioOut.finalize()
+	cAudioOut.finalize()
 	cImageProc.Finalize()
 	cCtrlCard.Finalize()
 	cState.Finalize()
